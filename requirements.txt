@@ -1,0 +1,36 @@
+# --- Core ---
+numpy
+pandas
+scipy
+scikit-learn
+
+# --- ECG / signal handling ---
+wfdb              # PTB-XL is distributed in WFDB format
+neurokit2         # optional: ECG signal preprocessing utilities
+
+# --- Deep learning (pretrained ECG model inference + fusion classifier training) ---
+torch
+torchvision
+
+# --- Explainability ---
+shap
+
+# --- Evidence retrieval ---
+biopython          # provides Bio.Entrez for PubMed E-utilities (esearch/efetch)
+requests
+
+# --- LLM orchestrator ---
+groq                # Groq API client for the report-generation / orchestrator step
+
+# --- MLOps ---
+dvc
+mlflow
+
+# --- Experiment / notebook environment ---
+jupyterlab
+matplotlib
+seaborn
+
+# --- Utilities ---
+python-dotenv
+tqdm

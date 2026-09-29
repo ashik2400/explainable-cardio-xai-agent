@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Data (tracked via DVC instead of git)
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# DVC internals that shouldn't be committed
+/data/raw.dvc.lock
+.dvc/tmp
+.dvc/cache
+
+# MLflow
+mlruns/
+mlflow.db
+
+# Models / large artifacts
+models/*.pt
+models/*.pkl
+models/*.ckpt
+
+# Env / secrets
+.env
+*.key
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
